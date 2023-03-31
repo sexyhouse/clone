@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #262626;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  background-color: #262626;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+header div img {
+  width: 70px;
+  height: 70px;
+  margin: 0px 15px 0px 15px;
+}
+@media screen and (max-width: 600px) {
+  header div img {
+    margin: 0px 5px 0px 5px;
+  }
+}
+header div .marca {
+  color: #f5f5f5;
+}
+@media screen and (max-width: 600px) {
+  header div .marca {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+header a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+header a button {
+  width: 120px;
+  height: 40px;
+  background-color: #F5F5F5;
+  border: 2px solid #9D9993;
+  color: #262626;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5%;
+  font-size: 16px;
+  transition: ease-in 250ms;
+}
+@media screen and (max-width: 600px) {
+  header a button {
+    width: 90px;
+    height: 40px;
+    letter-spacing: 2%;
+    font-size: 12px;
+  }
+}
+header a button:hover {
+  background-color: #E30B00;
+  border: 2px solid #57BB19;
+  color: #F5F5F5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+main .predefinicao {
+  display: flex;
+  flex-direction: row;
+  width: 870px;
+  height: 100px;
+  background-color: #f5f5f5;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 890px) {
+  main .predefinicao {
+    width: 600px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .predefinicao {
+    width: 290px;
+    height: 90px;
+  }
+}
+main .predefinicao .principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+}
+@media screen and (max-width: 890px) {
+  main .predefinicao .principal {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .predefinicao .principal {
+    width: 70%;
+  }
+}
+main .predefinicao .principal .status {
+  width: 60px;
+  height: 60px;
+  margin: 0px 20px 0px 20px;
+}
+@media screen and (max-width: 890px) {
+  main .predefinicao .principal .status {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .predefinicao .principal .status {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+  }
+}
+main .predefinicao .principal .artist {
+  text-align: center;
+  border-radius: 100px;
+  width: 95px;
+  height: 95px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 890px) {
+  main .predefinicao .principal .artist {
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .predefinicao .principal .artist {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+  }
+}
+main .predefinicao .principal .name {
+  font-size: 24px;
+  font-weight: 100;
+  color: #000;
+  margin-right: 100px;
+  letter-spacing: 5%;
+}
+@media screen and (max-width: 890px) {
+  main .predefinicao .principal .name {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .predefinicao .principal .name {
+    font-size: 16px;
+    margin-right: 0px;
+  }
+}
+main .predefinicao .final {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+main .predefinicao .final a {
+  width: 320px;
+  height: 100px;
+  background: rgba(227, 11, 0, 0.5);
+  transform: skew(-10deg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #262626;
+}
+@media screen and (max-width: 890px) {
+  main .predefinicao .final a {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .predefinicao .final a {
+    width: 70px;
+    height: 90px;
+    transform: skew(0deg);
+    justify-content: center;
+    background-color: rgba(227, 11, 0, 0.5) red;
+  }
+}
+main .predefinicao .final a:before {
+  content: "";
+  position: absolute;
+  transition: all 250ms ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #E30B00;
+  color: #f5f5f5;
+}
+@media screen and (max-width: 600px) {
+  main .predefinicao .final a:before {
+    background-color: transparent;
+  }
+}
+main .predefinicao .final a:hover:before {
+  height: 100%;
+}
+main .predefinicao .final a .visita {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .predefinicao .final a .visita h2 {
+  text-align: center;
+  transform: skew(10deg);
+}
+@media screen and (max-width: 600px) {
+  main .predefinicao .final a .visita h2 {
+    font-size: 16px;
+    transform: skew(0deg);
+  }
+}
+main p {
+  margin-top: 80px;
+  color: #F5F5F5;
+}/*# sourceMappingURL=style.css.map */
